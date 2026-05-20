@@ -23,69 +23,84 @@ export const continueWatching = [
 
 export const topRating = [
   {
-    title: "",
+    id: 5,
+    title: "Suzume",
     image: "/images/suzume.jpg",
   },
   {
-    title: "",
+    id: 6,
+    title: "Jurrasic World",
     image: "/images/jurrasic.jpg",
   },
   {
-    title: "",
+    id: 7,
+    title: "Sonic 2",
     image: "/images/sonic.jpg",
   },
   {
-    title: "",
+    id: 8,
+    title: "All Of Us Are Dead",
     image: "/images/allofus.jpg",
   },
   {
-    title: "",
+    id: 9,
+    title: "Big Hero 6",
     image: "/images/bighero.jpg",
   }
 ];
 
 export const trendingMovies = [
   {
-    title: "",
+    id: 10,
+    title: "The Tomorrow War",
     image: "/images/tomorrow.jpg",
   },
   {
-    title: "",
+    id: 11,
+    title: "Quantumania",
     image: "/images/quantum.jpg",
   },
   {
-    title: "",
+    id: 12,
+    title: "Guardian Of The Galaxy",
     image: "/images/gotg.jpg",
   },
   {
-    title: "",
+    id: 13,
+    title: "A Man Called Otto",
     image: "/images/otto.jpg",
   },
   {
-    title: "",
+    id: 14,
+    title: "The Little Mermaid",
     image: "/images/mermaid.jpg",
   }
 ];
 
 export const newRelease = [
   {
-    title: "",
+    id: 15,
+    title: "The Little Mermaid",
     image: "/images/mermaid.jpg",
   },
   {
-    title: "",
+    id: 16,
+    title: "Duty After School",
     image: "/images/duty.jpg",
   },
   {
-    title: "",
+    id: 17,
+    title: "Big Hero 6",
     image: "/images/bighero.jpg",
   },
   {
-    title: "",
+    id: 18,
+    title: "All Of Us Are Dead",
     image: "/images/allofus.jpg",
   },
   {
-    title: "",
+    id: 19,
+    title: "Missing",
     image: "/images/missing.jpg",
   }
 ];

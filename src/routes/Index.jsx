@@ -5,6 +5,7 @@ import {
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Register from "../pages/Register";
+import MyList from "../pages/MyList";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
     path: "/register",
     element: <Register />,
   },
+  {
+    path: "/my-list",
+    element: <MyList />,
+  }
 ]);
 
 export default router;
