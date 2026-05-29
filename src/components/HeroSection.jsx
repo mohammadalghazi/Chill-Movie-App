@@ -12,8 +12,7 @@ export default function HeroSection() {
         relative
       "
       style={{
-        backgroundImage:
-          "url('/images/hero.jpg')",
+        backgroundImage: "url('/images/hero.jpg')",
       }}
     >
       {/* Overlay */}
@@ -34,7 +33,10 @@ export default function HeroSection() {
         </h1>
 
         <p className="text-gray-300 mb-6">
-          Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan, Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan dalam perang.
+          Sebuah benda tak dikenal mengambil alih dunia. Dalam keputusasaan,
+          Departemen Pertahanan mulai merekrut lebih banyak tentara, termasuk
+          siswa sekolah menengah. Mereka pun segera menjadi pejuang garis depan
+          dalam perang.
         </p>
 
         <div className="flex gap-4 flex-wrap">

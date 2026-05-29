@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import { FaChevronDown } from "react-icons/fa";
 import ProfileDropdown from "./ProfileDropdown";
 
+import logo from "../assets/logo-chill.png";
+
 export default function Navbar() {
   return (
     <nav
@@ -9,72 +11,84 @@ export default function Navbar() {
         fixed
         top-0
         left-0
-        w-full
+        right-0
         z-50
-        bg-black/70
-        backdrop-blur-md
-        px-6
-        py-4
+        h-20
+        bg-[#0F1115]
         flex
-        justify-between
         items-center
+        justify-between
+        px-6
+        md:px-12
       "
     >
-      {/* Left */}
-      <div className="flex items-center gap-8">
-      <Link to="/">
-        <h1
-          className="
-            text-white
-            text-2xl
-            font-bold
-            cursor-pointer
-          "
-        >
-          🎬 CHILL
-        </h1>
-      </Link>
+      {/* Left Side */}
+      <div className="flex items-center gap-10">
+        {/* Logo */}
+        <Link to="/">
+          <img
+            src={logo}
+            alt="CHILL Logo"
+            className="
+              h-10
+              w-auto
+              object-contain
+              cursor-pointer
+            "
+          />
+        </Link>
 
+        {/* Menu */}
         <ul
           className="
-            hidden
-            md:flex
-            gap-6
+            flex
+            items-center
+            gap-8
             text-white
+            text-sm
+            md:text-base
             font-medium
           "
         >
-
-          {/* Home */}
           <li>
             <Link
               to="/"
               className="
-                hover:text-blue-400
+                hover:text-gray-300
                 transition
               "
             >
-              Home
+              Series
             </Link>
           </li>
 
-          {/* My List */}
+          <li>
+            <Link
+              to="/"
+              className="
+                hover:text-gray-300
+                transition
+              "
+            >
+              Film
+            </Link>
+          </li>
+
           <li>
             <Link
               to="/my-list"
               className="
-                hover:text-blue-400
+                hover:text-gray-300
                 transition
               "
             >
               Daftar Saya
             </Link>
           </li>
-
         </ul>
       </div>
 
-      {/* Right */}
+      {/* Right Side */}
       <ProfileDropdown />
     </nav>
   );

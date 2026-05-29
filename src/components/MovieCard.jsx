@@ -1,8 +1,4 @@
-export default function MovieCard({
-  image,
-  title,
-  rating,
-}) {
+export default function MovieCard({ image, title, rating }) {
   return (
     <div
       className="
@@ -37,15 +33,9 @@ export default function MovieCard({
           p-3
         "
       >
-        <h3 className="text-white font-semibold">
-          {title}
-        </h3>
+        <h3 className="text-white font-semibold">{title}</h3>
 
-        {rating && (
-          <p className="text-gray-300 text-sm">
-            ⭐ {rating}
-          </p>
-        )}
+        {rating && <p className="text-gray-300 text-sm">⭐ {rating}</p>}
       </div>
     </div>
   );

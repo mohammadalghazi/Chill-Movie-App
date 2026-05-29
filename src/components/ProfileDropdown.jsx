@@ -1,75 +1,59 @@
 import { useState, useRef, useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-import {
-  FaUser,
-  FaStar,
-  FaSignOutAlt,
-  FaChevronDown,
-} from "react-icons/fa";
+import { FaUser, FaStar, FaSignOutAlt, FaChevronDown } from "react-icons/fa";
+
+import avatar from "../assets/avatar.jpg";
 
 export default function ProfileDropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Reference dropdown
   const dropdownRef = useRef(null);
 
   const navigate = useNavigate();
 
-  // Close ketika klik luar
+  // Close dropdown ketika klik di luar
   useEffect(() => {
     function handleClickOutside(event) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setIsOpen(false);
       }
     }
 
-    document.addEventListener(
-      "mousedown",
-      handleClickOutside
-    );
+    document.addEventListener("mousedown", handleClickOutside);
 
     return () => {
-      document.removeEventListener(
-        "mousedown",
-        handleClickOutside
-      );
+      document.removeEventListener("mousedown", handleClickOutside);
     };
   }, []);
 
   return (
-    <div
-      ref={dropdownRef}
-      className="relative"
-    >
+    <div ref={dropdownRef} className="relative">
       {/* Trigger */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="
           flex
           items-center
-          gap-2
+          gap-3
           text-white
         "
       >
         {/* Avatar */}
         <img
-          src="https://i.pravatar.cc/40"
-          alt="profile"
+          src={avatar}
+          alt="Profile"
           className="
             w-10
             h-10
             rounded-full
-            border
-            border-gray-600
+            object-cover
           "
         />
 
-        {/* Arrow */}
+        {/* Chevron */}
         <FaChevronDown
+          size={12}
           className={`
             transition-transform
             duration-300
@@ -83,38 +67,34 @@ export default function ProfileDropdown() {
         <div
           className="
             absolute
+            top-14
             right-0
-            mt-3
-            w-56
-            bg-[#181A1F]
+            w-48
+            bg-[#181A20]
+            rounded-lg
             border
-            border-gray-800
-            rounded-2xl
-            shadow-[0_10px_40px_rgba(0,0,0,0.5)]
-            backdrop-blur-md
+            border-gray-700
+            shadow-xl
             overflow-hidden
             z-50
-            animate-in
-            fade-in
-            zoom-in-95
-            duration-200
           "
         >
-          {/* Profil */}
+          {/* Profil Saya */}
           <button
             className="
               w-full
               flex
               items-center
               gap-3
-              px-5
-              py-4
+              px-4
+              py-3
+              text-sm
               text-blue-500
               hover:bg-white/5
               transition
             "
           >
-            <FaUser />
+            <FaUser size={14} />
             Profil Saya
           </button>
 
@@ -125,14 +105,15 @@ export default function ProfileDropdown() {
               flex
               items-center
               gap-3
-              px-5
-              py-4
+              px-4
+              py-3
+              text-sm
               text-white
               hover:bg-white/5
               transition
             "
           >
-            <FaStar />
+            <FaStar size={14} />
             Ubah Premium
           </button>
 
@@ -144,15 +125,16 @@ export default function ProfileDropdown() {
               flex
               items-center
               gap-3
-              px-5
-              py-4
+              px-4
+              py-3
+              text-sm
               text-white
               hover:bg-red-500/10
               hover:text-red-400
               transition
             "
           >
-            <FaSignOutAlt />
+            <FaSignOutAlt size={14} />
             Keluar
           </button>
         </div>

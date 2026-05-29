@@ -40,20 +40,14 @@ export default function Register() {
       >
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <h1 className="text-white text-4xl font-bold">
-            🎬 CHILL
-          </h1>
+          <h1 className="text-white text-4xl font-bold">🎬 CHILL</h1>
         </div>
 
         {/* Title */}
         <div className="text-center mb-8">
-          <h2 className="text-white text-3xl font-semibold">
-            Daftar
-          </h2>
+          <h2 className="text-white text-3xl font-semibold">Daftar</h2>
 
-          <p className="text-gray-300 mt-2">
-            Selamat datang!
-          </p>
+          <p className="text-gray-300 mt-2">Selamat datang!</p>
         </div>
 
         {/* Form */}
@@ -64,10 +58,7 @@ export default function Register() {
             placeholder="Masukkan username"
           />
 
-          <PasswordField
-            label="Kata Sandi"
-            placeholder="Masukkan kata sandi"
-          />
+          <PasswordField label="Kata Sandi" placeholder="Masukkan kata sandi" />
 
           <PasswordField
             label="Konfirmasi Kata Sandi"
@@ -78,20 +69,14 @@ export default function Register() {
         {/* Login */}
         <div className="mt-4 text-sm text-gray-300">
           Sudah punya akun?{" "}
-          <Link
-            to="/login"
-            className="text-white font-semibold"
-          >
+          <Link to="/login" className="text-white font-semibold">
             Masuk
           </Link>
         </div>
 
         {/* Buttons */}
         <div className="mt-6 flex flex-col gap-4">
-                    <Button
-                      text="Daftar"
-                      onClick={() => navigate("/")}
-                    />
+          <Button text="Daftar" onClick={() => navigate("/")} />
 
           <Divider />
 

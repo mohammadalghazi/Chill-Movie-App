@@ -1,14 +1,9 @@
 import { FaEyeSlash } from "react-icons/fa";
 
-export default function PasswordField({
-  label,
-  placeholder,
-}) {
+export default function PasswordField({ label, placeholder }) {
   return (
     <div className="flex flex-col gap-2">
-      <label className="text-white text-sm">
-        {label}
-      </label>
+      <label className="text-white text-sm">{label}</label>
 
       <div className="relative">
         <input

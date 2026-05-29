@@ -1,13 +1,12 @@
+import logo from "../assets/logo-chill.png";
+
 export default function Footer() {
   return (
     <footer
       className="
-        bg-[#0F1115]
+        bg-[#181A20]
         border-t
         border-gray-800
-        px-6
-        md:px-12
-        py-10
         mt-20
       "
     >
@@ -15,106 +14,112 @@ export default function Footer() {
         className="
           max-w-7xl
           mx-auto
-          flex
-          flex-col
-          md:flex-row
-          justify-between
-          gap-10
+          px-6
+          md:px-12
+          py-10
         "
       >
-        {/* LEFT */}
-        <div>
-          <h1
-            className="
-              text-white
-              text-4xl
-              font-bold
-              mb-4
-            "
-          >
-            🎬 CHILL
-          </h1>
-
-          <p className="text-gray-400 text-lg">
-            @2023 Chill All Rights Reserved.
-          </p>
-        </div>
-
-        {/* RIGHT */}
         <div
           className="
             flex
             flex-col
-            md:flex-row
-            gap-12
-            md:gap-24
+            lg:flex-row
+            justify-between
+            gap-10
           "
         >
-          {/* Genre */}
+          {/* Left */}
           <div>
-            <h3
-              className="
-                text-white
-                font-semibold
-                mb-5
-              "
-            >
-              Genre
-            </h3>
+            <img src={logo} alt="CHILL" className="h-10 w-auto mb-4" />
 
-            <div
+            <p
               className="
-                grid
-                grid-cols-2
-                gap-x-10
-                gap-y-4
                 text-gray-400
+                text-sm
               "
             >
-              <p>Aksi</p>
-              <p>Drama</p>
-              <p>Komedi</p>
-              <p>Sains & Alam</p>
-
-              <p>Anak-anak</p>
-              <p>Fantasi Ilmiah & Fantasi</p>
-              <p>Petualangan</p>
-              <p>Thriller</p>
-
-              <p>Anime</p>
-              <p>Kejahatan</p>
-              <p>Perang</p>
-
-              <p>Britania</p>
-              <p>KDrama</p>
-              <p>Romantis</p>
-            </div>
+              ©2023 Chill All Rights Reserved.
+            </p>
           </div>
 
-          {/* Bantuan */}
-          <div>
-            <h3
-              className="
-                text-white
-                font-semibold
-                mb-5
-              "
-            >
-              Bantuan
-            </h3>
+          {/* Right */}
+          <div
+            className="
+              flex
+              flex-col
+              md:flex-row
+              gap-10
+              md:gap-20
+            "
+          >
+            {/* Genre */}
+            <div>
+              <h3
+                className="
+                  text-white
+                  font-semibold
+                  mb-4
+                "
+              >
+                Genre
+              </h3>
 
-            <div
-              className="
-                flex
-                flex-col
-                gap-4
-                text-gray-400
-              "
-            >
-              <p>FAQ</p>
-              <p>Kontak Kami</p>
-              <p>Privasi</p>
-              <p>Syarat & Ketentuan</p>
+              <div
+                className="
+                  grid
+                  grid-cols-2
+                  gap-x-8
+                  gap-y-2
+                  text-gray-400
+                  text-sm
+                "
+              >
+                <p>Aksi</p>
+                <p>Drama</p>
+
+                <p>Anime</p>
+                <p>Romantis</p>
+
+                <p>Komedi</p>
+                <p>Thriller</p>
+
+                <p>Petualangan</p>
+                <p>Kejahatan</p>
+
+                <p>Anak-anak</p>
+                <p>KDrama</p>
+
+                <p>Fantasi</p>
+                <p>Perang</p>
+              </div>
+            </div>
+
+            {/* Bantuan */}
+            <div>
+              <h3
+                className="
+                  text-white
+                  font-semibold
+                  mb-4
+                "
+              >
+                Bantuan
+              </h3>
+
+              <div
+                className="
+                  flex
+                  flex-col
+                  gap-2
+                  text-gray-400
+                  text-sm
+                "
+              >
+                <p>FAQ</p>
+                <p>Kontak Kami</p>
+                <p>Privasi</p>
+                <p>Syarat & Ketentuan</p>
+              </div>
             </div>
           </div>
         </div>

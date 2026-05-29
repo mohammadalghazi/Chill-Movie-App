@@ -1,8 +1,4 @@
-export default function Button({
-  text,
-  onClick,
-  variant = "primary",
-}) {
+export default function Button({ text, onClick, variant = "primary" }) {
   return (
     <button
       onClick={onClick}

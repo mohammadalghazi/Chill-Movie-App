@@ -18,7 +18,7 @@ export const continueWatching = [
     title: "A Man Called Otto",
     image: "/images/ottoHero.jpg",
     rating: "4.4/5",
-  }
+  },
 ];
 
 export const topRating = [
@@ -46,7 +46,7 @@ export const topRating = [
     id: 9,
     title: "Big Hero 6",
     image: "/images/bighero.jpg",
-  }
+  },
 ];
 
 export const trendingMovies = [
@@ -74,7 +74,7 @@ export const trendingMovies = [
     id: 14,
     title: "The Little Mermaid",
     image: "/images/mermaid.jpg",
-  }
+  },
 ];
 
 export const newRelease = [
@@ -102,5 +102,5 @@ export const newRelease = [
     id: 19,
     title: "Missing",
     image: "/images/missing.jpg",
-  }
+  },
 ];

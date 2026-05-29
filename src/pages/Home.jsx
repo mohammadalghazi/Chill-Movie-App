@@ -7,7 +7,7 @@ import {
   continueWatching,
   topRating,
   trendingMovies,
-  newRelease
+  newRelease,
 } from "../data/movies";
 
 export default function Home() {
@@ -17,25 +17,16 @@ export default function Home() {
 
       <HeroSection />
 
-      <MovieSection
-        title="Melanjutkan Tonton Film"
-        movies={continueWatching}
-      />
+      <MovieSection title="Melanjutkan Tonton Film" movies={continueWatching} />
 
       <MovieSection
         title="Top Rating Film dan Series Hari ini"
         movies={topRating}
       />
 
-      <MovieSection
-        title="Film Trending"
-        movies={trendingMovies}
-      />
+      <MovieSection title="Film Trending" movies={trendingMovies} />
 
-      <MovieSection
-        title="Rilis Baru"
-        movies={newRelease}
-      />
+      <MovieSection title="Rilis Baru" movies={newRelease} />
 
       <Footer />
     </div>

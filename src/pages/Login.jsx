@@ -8,7 +8,6 @@ import Divider from "../components/Divider";
 import { useNavigate, Link } from "react-router-dom";
 import { FcGoogle } from "react-icons/fc";
 
-
 export default function Login() {
   const navigate = useNavigate();
   return (
@@ -42,20 +41,14 @@ export default function Login() {
       >
         {/* Logo */}
         <div className="flex justify-center mb-8">
-          <h1 className="text-white text-4xl font-bold">
-            🎬 CHILL
-          </h1>
+          <h1 className="text-white text-4xl font-bold">🎬 CHILL</h1>
         </div>
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-white text-3xl font-semibold">
-            Masuk
-          </h2>
+          <h2 className="text-white text-3xl font-semibold">Masuk</h2>
 
-          <p className="text-gray-300 mt-2">
-            Selamat datang kembali!
-          </p>
+          <p className="text-gray-300 mt-2">Selamat datang kembali!</p>
         </div>
 
         {/* Form */}
@@ -66,10 +59,7 @@ export default function Login() {
             placeholder="Masukkan username"
           />
 
-          <PasswordField
-            label="Kata Sandi"
-            placeholder="Masukkan kata sandi"
-          />
+          <PasswordField label="Kata Sandi" placeholder="Masukkan kata sandi" />
         </div>
 
         {/* Bottom Text */}
@@ -86,10 +76,7 @@ export default function Login() {
         >
           <div>
             Belum punya akun?{" "}
-            <Link
-              to="/register"
-              className="text-white font-semibold"
-            >
+            <Link to="/register" className="text-white font-semibold">
               Daftar
             </Link>
           </div>
@@ -101,10 +88,7 @@ export default function Login() {
 
         {/* Button */}
         <div className="mt-6 flex flex-col gap-4">
-          <Button
-            text="Masuk"
-            onClick={() => navigate("/")}
-          />
+          <Button text="Masuk" onClick={() => navigate("/")} />
 
           <Divider />
 
